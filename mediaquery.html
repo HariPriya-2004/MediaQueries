@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+            
+
+        }
+        .container{
+            width: 100vw;
+            min-height: 100vh;
+            background-color: black;
+            padding:10px;
+            background-image: url(movie.png);
+            background-size: cover;
+            overflow: scroll;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+          
+
+        }
+        .box{
+           width: 200px;
+            height: 300px;
+            background-color: blue;
+            margin:10px;
+            border-radius: 10px;
+            padding:10px;
+            box-shadow: 0 0 70px rgb(7, 3, 3);
+            
+            
+        }
+        .img1{
+            background-image: url(titanic.png);
+            background-size: cover;
+        }
+        .img2{
+            background-image: url(horror.png);
+             background-size: cover;
+        }
+        .img3{
+             background-image: url(sport.png);
+             background-size: cover;
+        }
+        .img4{
+            background-image: url(hanuman.png);
+            background-size: cover;;
+        }
+        .h{
+            color: white;
+            font-size: 20px;
+            text-shadow: 0 0 20px black;
+        }
+        .para{
+            color: white;
+            font-size: 15px;
+             margin-top: 10px;
+            text-shadow: 0 0px 10px rgb(6, 6, 6);
+            margin-bottom: 10px;
+
+        }
+        .btn{
+            background-color: rgb(65, 65, 226);
+            color: white;
+             margin-top: 10px;
+            box-shadow: 0 10px 20px rgb(8, 7, 7);
+            border-radius: 7px;
+            padding: 5px;
+            border: none;
+            cursor: pointer;
+
+        }
+        .btn:hover{
+            background-color: rgb(23, 23, 84);
+            color: white;
+            border-radius: 7px;
+        } 
+        @media(max-width:1000px){
+            .container{
+                
+               flex-direction: column;
+                align-items: center;
+                
+            }
+            .box{
+                min-height:  250px;
+                max-height: 250px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+     <div class="box img1">
+        <h1 class="h">Love And Drama</h1>
+        <p class="para">"It's always better when we're together."</p>
+        <button class="btn">Explore Now</button>
+    </div>
+     <div class="box img2">
+        <h1 class="h">Suspense Thrillers and Horror</h1>
+        <p class="para">"Be afraid, be very afraid."</p>
+        <button class="btn">Explore Now</button>
+    
+     </div>
+     <div class="box img3">
+        <h1 class="h">Sports Drama</h1>
+        <p class="para">"Train, conquer, repeat."</p>
+        <button class="btn" >Explore Now</button>
+     </div>
+     
+     <div class="box img4">
+        <h1 class="h">Mythology</h1>
+        <p class="para">"GOD is EveryWhere"</p>
+        <button class="btn" >Explore Now</button>
+     </div>
+     
+    </div>
+    
+</body>
+</html>
